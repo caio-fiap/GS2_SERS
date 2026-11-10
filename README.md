@@ -5,8 +5,8 @@
 * Caio Marinho Pereira - RM: 572873
 
 ## Público e Problema
-**Público:** [??]  
-**Necessidade energética:** [??]  
+**Público:** a definir  
+**Necessidade energética:** a definir  
 **Como o assistente ajuda:** O usuário descreve seu uso energético e recebe: consumo estimado, comparação de alternativas e fontes, e limitações.  
 
 ## Funcionalidades
