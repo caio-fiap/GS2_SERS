@@ -1,2 +1,9 @@
-# GS2_SERS
-Repositório para Global Solution 2 de SERS
+# Global Solution 2
+## Citizen Assist AI
+### Soluções em Energias Renováveis e Sustentáveis
+
+**Integrantes:**
+* Caio Marinho Pereira - RM: 572873
+
+---
+
