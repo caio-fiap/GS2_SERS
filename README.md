@@ -21,12 +21,12 @@ Requerimento: Python 3.8
 ```bash
 python src/assistente.py "5500 W, 4 pessoas, 10 min cada, tarifa R$ 0,90/kWh" # exemplo de descrição de uso
 python analise/comparacao.py # tabela comparativa e sensibilidade
-python tests/test_energia.py # testes dos cálculos
+python testes/teset_energia.py # testes dos cálculos
 ```
 
 ## Estrutura do Projeto
 ```
-
+a definir
 ```
 
 ## Fórimulas
