@@ -1,8 +1,10 @@
-# Global Solution 2  
-## Citizen Assist AI - Soluções em Energias Renováveis e Sustentáveis
+# Global Solution 2 - Soluções em Energias Renováveis e Sustentáveis 
+## Citizen Assist AI - Análise Energética e Sugestões
 
 **Integrantes:**
 * Caio Marinho Pereira - RM: 572873
+
+---
 
 ## Público e Problema
 **Público:** a definir  
