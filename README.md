@@ -7,9 +7,9 @@
 ---
 
 ## Público e Problema
-**Público:** a definir  
-**Necessidade energética:** a definir  
-**Como o assistente ajuda:** O usuário descreve seu uso energético e recebe: consumo estimado, comparação de alternativas e fontes, e limitações.  
+- **Público:** Famílias de São Paulo que buscam reduzir o consumo energético durante o banho.  
+- **Necessidade energética:** reduzir o gasto com o chuveiro elétrico, geralmente um dos maiores consumidores domésticos.   
+- **Como o assistente ajuda:** O usuário descreve seu uso energético e recebe: consumo estimado, comparação de alternativas e fontes, e limitações.  
 
 ## Funcionalidades
 1. Cálculo de consumo (kWh/mês), custo (R$/mês) e emissões (kg CO₂).
@@ -28,7 +28,14 @@ python testes/teset_energia.py # testes dos cálculos
 
 ## Estrutura do Projeto
 ```
-a definir
+├── src/
+│   ├── assistente.py
+│   ├── dados.py
+│   ├── energia.py
+│   └── 
+├── dados/
+│   └── fontes_premissas.csv
+
 ```
 
 ## Fórimulas
