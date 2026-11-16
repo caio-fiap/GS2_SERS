@@ -43,7 +43,6 @@ def responder(pergunta, p = None):
         f"economia de ~R$ {C['economia_mensal']:.0f}/mes; retorno em ~{meses(C['payback_mes'])}; "
         f"economia em {i['anos']:.0f} anos de ~R$ {C['economia_periodo']:.0f}.",
         f"CO2 evitado em {i['anos']:.0f} anos: B ~{B['co2_evitado_kg']:.0f} kg; C ~{C['co2_evitado_kg']:.0f} kg "
-        "(pequeno, porque a rede eletrica brasileira ja e bastante renovavel).",
         "",
         "Recomendacao: comece pela opcao B (custo zero) e avalie a C se voce for dono do imovel, "
         "tiver telhado com sol e puder investir.",

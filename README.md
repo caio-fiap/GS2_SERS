@@ -16,14 +16,12 @@
 2. Comparação para o mesmo uso e mesmo período.
 3. Payback, economia acumulada, CO2 evitado e análise de sensibilidade.
 4. Resposta com premissas, limitações e fontes. Valores não informados pelo usuário são avisados.
-5. ```montar_prompt_llm()```: LLM que explica os números calculados pelo código, apenas.
 
 ## Execução
 Requerimento: Python 3.8
 ```bash
 python src/assistente.py "5500 W, 4 pessoas, 10 min cada, tarifa R$ 0,90/kWh" # exemplo de descrição de uso
 python analise/comparacao.py # tabela comparativa e sensibilidade
-python testes/teste.py # testes dos cálculos
 ```
 
 ## Estrutura do Projeto
@@ -35,11 +33,8 @@ python testes/teste.py # testes dos cálculos
 │   └── recomendador.py
 ├── dados/
 │   └── fontes_premissas.csv
-├── analise/
-│   └── comparacao.py
-└── testes/
-    └── teste.py
-
+└── analise/
+    └── comparacao.py
 ```
 
 ## Fórimulas
@@ -47,19 +42,21 @@ python testes/teste.py # testes dos cálculos
 * Energia (kWh/mês) = potência (W) * horas/dia * dias
 * Custo (R$/mẽs) = kWh * tarifa (R$/kWh)
 * CO2 (kg) = kWh * fator de emissão (kg CO2/kWh)
-* Payback (meses) = custo inicial + custo mensal * meses
+* Payback (meses) = custo inicial + economia mensal
+* Custo total no período = custo inicial + custo mensal * meses
 
-## Resultados
+## Resultado padrão
 
-|Alternativa|kWh/mês|R$/mês|Inicial|Total em x anos|Payback|
-|---|---|---|---|---|---|
-|A|1|1|1|1|1|
-|B|2|2|2|2|2|
-|C|3|3|3|3|3|
+|Alternativa|kWh/mês|R$/mês|Inicial|Total em 10 anos|CO2 kg|Payback|
+|--------|---|---|---|---|---|---|
+|A) Atual | 90 | 70 | 0 | 8424 | 756 | - |
+|B) Banho de 8 min | 72 | 56 | 0 | 605 | 6739 | imediato |
+|C) Aquecedor solar | 27 | 38 | 4500 | 227 | 9027 | ~11.5 anos|
 
 ## Limitações
-
-* Valores são estimativas, não garantias. Variam com tarifa, bandeira tarifária, clima, intalação etc.
-* Tarifa e custos foram considerados contantes nos X anos (a definir) (sem reajuste de inflação, por exemplo).
+- Valores são estimativas, não garantias. Variam com tarifa, bandeira tarifária, clima, intalação, etc.
+- Tarifa e custos foram considerados contantes nos X anos (a definir) (sem reajuste de inflação, por exemplo).
+- O aquecedor exige imóvel próprio (ou permissão do proprietário), telhado com sol e investimento inciial.
+- O assistente trata apenas do chuveiro elétrico.
 
 ## Referências, justificativas e testes
