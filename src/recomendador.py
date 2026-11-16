@@ -1,6 +1,6 @@
 # compara alternativas para o mesmo uso e mesmo periodo
 
-import energia
+from energia import consumo_mes, custo_mensal, co2_kg, payback_mes
 from dados import valor
 
 def comparar(p, potencia_w = None, pessoas = None, min_banho = None, tarifa = None, fracao_solar = None):
@@ -16,11 +16,11 @@ def comparar(p, potencia_w = None, pessoas = None, min_banho = None, tarifa = No
     meses = anos * 12
 
     horas_dia = pessoas * min_banho / 60
-    kwh_base = consumo_kwh_mes(potencia_w, horas_dia, dias)
+    kwh_base = consumo_mes(potencia_w, horas_dia, dias)
 
     # B - reduzir tempo de banho
     meta = min(valor(p, "min_banho_meta"), min_banho)
-    kwh_b = consumo_kwh_mes(potencia_w, pessoas * meta / 60, dias)
+    kwh_b = consumo_mes(potencia_w, pessoas * meta / 60, dias)
 
     # C - aquecedor solar cobre uma parte do consumo
     kwh_c = kwh_base * (1 - fracao_solar)
@@ -45,9 +45,9 @@ def comparar(p, potencia_w = None, pessoas = None, min_banho = None, tarifa = No
         x["economia_mensal"] = a["custo_mensal"] - x["custo_mensal"]
         x["economia_periodo"] = a["custo_total_periodo"] - x["custo_total_periodo"]
         x["co2_evitado_kg"] = a["co2_kg_periodo"] - x["co2_kg_periodo"]
-        x["payback_meses"] = payback_meses(x["custo_inicial"], x["economia_mensal"]) if x["custo_inicial"] else 0
+        x["payback_mes"] = payback_mes(x["custo_inicial"], x["economia_mensal"]) if x["custo_inicial"] else 0
     a["economia_mensal"] = a["economia_periodo"] = a["co2_evitado"] = 0.0
-    a["payback_meses"] = None
+    a["payback_mes"] = None
 
     return{
         "entrada": {
@@ -70,7 +70,7 @@ def sensibilidade(p, **kw):
         for fr in (0.5, 0.7, 0.8):
             kw2 = dict(kw, tarifa=base_tarifa * f_t, fracao_solar=fr)
             r = comparar(p, **kw2)
-            linhas.append({"tarifa": base_tarifa * f_t, "fracao": fr, "payback_anos": (r["C"]["payback_meses"] / 12) if r["C"]["payback_meses"] else None})
+            linhas.append({"tarifa": base_tarifa * f_t, "fracao": fr, "payback_anos": (r["C"]["payback_mes"] / 12) if r["C"]["payback_mes"] else None})
     return linhas
 
 
