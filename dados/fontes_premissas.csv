@@ -3,7 +3,7 @@ tarifa_kwh,Tarifa residencial com impostos,0.78,R$/kWh,vigente,Enel SP / ANEEL -
 potencia_chuveiro,Potencia do chuveiro eletrico (media),6000,W,n/a,Etiqueta do aparelho / tabelas PBE-Inmetro,http://www.inmetro.gov.br/consumidor/pbe/PBE5.pdf,15/11/2026,sim,-
 dias_mes,Dias considerados no mes,30,dias,mensal,Definido pelo grupo,n/a,n/a,nao,Simplificacao
 pessoas_padrao,"Numero de moradores (media, usado como padrao)",3,pessoas,n/a,"IBGE, aproximado",https://static.poder360.com.br/2026/04/PNAD_Domicilios_Moradores_2025_precedencia_embargo_pdf_IBGE_Drive-1.pdf,15/11/2026,sim,Usado se o usuario nao informar
-min_banho_padrao,Duracao media do banho por pessoa,10,min,diario,"Premissa do grupa, baseado na premissa utilizada pelo Procel",n/a,n/a,sim,Estimativa
+min_banho_padrao,Duracao media do banho por pessoa,10,min,diario,"Premissa do grupo, baseado na premissa utilizada pelo Procel",n/a,n/a,sim,Estimativa
 min_banho_meta,Meta de duracao do banho por pessoa (alternativa B),8,min,diario,Recomendado pela CEMIG,https://www.cemig.com.br/noticia/dicas-e-orientacoes/cinco-minutos-a-mais-no-banho-podem-pesar-quanto-na-conta-de-luz-veja-a-diferenca-com-a-ajuda-da-cemig/,15/11/2026,sim,Meta de mudanca de habito
 fator_co2,Fator de emissao medio da rede (SIN),0.07,kg CO2/kWh,anual,MCTI - Fatores de emissao do SIN,https://www.gov.br/mcti/pt-br/acompanhe-o-mcti/cgcl/paginas/fator-medio-inventarios-corporativos,15/11/2026,sim,"Media dos valores, de 2015 a 2025"
 solar_custo_inicial,Custo instalado de aquecedor solar para 4 pessoas,4500,R$,unico,Media de 3 orcamentos,n/a,15/11/2026,sim,-

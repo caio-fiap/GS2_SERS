@@ -33,8 +33,11 @@ python analise/comparacao.py # tabela comparativa e sensibilidade
 │   └── recomendador.py
 ├── dados/
 │   └── fontes_premissas.csv
-└── analise/
-    └── comparacao.py
+├── analise/
+│   └── comparacao.py
+└── docs
+    ├── referencias.md
+    └── testes_usuarios.md
 ```
 
 ## Fórimulas
