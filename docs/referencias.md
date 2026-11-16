@@ -2,7 +2,7 @@
 
 |Dados|Fonte|Link|Acesso|
 |---|---|---|---|
-| Tarifa e Bandeiras | ANEEL |  | 15/11/2026 |
+| Tarifa e Bandeiras | Gov - ANEEL | https://www.gov.br/aneel/pt-br/assuntos/tarifas/bandeiras-tarifarias | 15/11/2026 |
 | Tarifa B1 residencial| Enel SP | https://www.enel.com.br/pt-saopaulo/Para_Voce/tarifa-energia-eletrica.html | 15/11/2026 |
 | Potência e eficiência de equipamentos| Procel / PBE-Inmetro | http://www.inmetro.gov.br/consumidor/pbe/PBE5.pdf | 15/11/2026 |
 | Custos de aquecedor solar | 3 orçamentos | n/a | 15/11/2026 |
