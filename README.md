@@ -32,9 +32,13 @@ python testes/teset_energia.py # testes dos cálculos
 │   ├── assistente.py
 │   ├── dados.py
 │   ├── energia.py
-│   └── 
+│   └── recomendador.py
 ├── dados/
 │   └── fontes_premissas.csv
+├── analise/
+│   └── comparacao.py
+└── testes/
+    └── teste.py
 
 ```
 
