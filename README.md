@@ -53,12 +53,12 @@ python analise/comparacao.py # tabela comparativa e sensibilidade
 |Alternativa|kWh/mês|R$/mês|Inicial|Total em 10 anos|CO2 kg|Payback|
 |--------|---|---|---|---|---|---|
 |A) Atual | 90 | 70 | 0 | 8424 | 756 | - |
-|B) Banho de 8 min | 72 | 56 | 0 | 605 | 6739 | imediato |
+|B) Banho de 7 min | 63 | 49 | 0 | 5897 | 529 | - |
 |C) Aquecedor solar | 27 | 38 | 4500 | 227 | 9027 | ~11.5 anos|
 
 ## Limitações
 - Valores são estimativas, não garantias. Variam com tarifa, bandeira tarifária, clima, intalação, etc.
-- Tarifa e custos foram considerados contantes nos X anos (a definir) (sem reajuste de inflação, por exemplo).
+- Tarifa e custos foram considerados contantes nos 10 anos (sem reajuste de inflação, por exemplo).
 - O aquecedor exige imóvel próprio (ou permissão do proprietário), telhado com sol e investimento inciial.
 - O assistente trata apenas do chuveiro elétrico.
 
