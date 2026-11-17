@@ -16,6 +16,8 @@ for k in "ABC":
     pb = "-" if a["payback_mes"] in (None, 0) else f"{a['payback_mes']/12:.1f} a"
     print(f"{a['nome']:28}{a['kwh_mes']:9.0f}{a['custo_mensal']:9.0f}{a['custo_inicial']:9.0f} {a['custo_total_periodo']:11.0f}{a['co2_kg_periodo']:9.0f}{pb:>10}")
 
+print("\n* payback = tempo para recuperar o capital investido ")
+
 print("\nSensibilidade do payback do aquecedor solar (em anos):")
 print(f"{'Tarifa':>8}{'Economia':>10}{'Payback':>10}")
 for l in sensibilidade(p):
