@@ -65,3 +65,4 @@ python analise/comparacao.py # tabela comparativa e sensibilidade
 - O assistente trata apenas do chuveiro elétrico.
 
 ## Referências, justificativas e testes
+Ver nos arquivos de `docs/`
