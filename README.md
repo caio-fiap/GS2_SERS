@@ -54,7 +54,7 @@ python analise/comparacao.py # tabela comparativa e sensibilidade
 |--------|---|---|---|---|---|---|
 |A) Atual | 90 | 70 | 0 | 8424 | 756 | - |
 |B) Banho de 7 min | 63 | 49 | 0 | 5897 | 529 | - |
-|C) Aquecedor solar | 27 | 38 | 4500 | 227 | 9027 | ~11.5 anos|
+|C) Aquecedor solar | 27 | 38 | 4500 | 227 | 9027 | 11.5 anos|
 
 ## Limitações
 - Valores são estimativas, não garantias. Variam com tarifa, bandeira tarifária, clima, intalação, etc.
