@@ -26,6 +26,7 @@ python analise/comparacao.py # tabela comparativa e sensibilidade
 
 ## Estrutura do Projeto
 ```
+├── README.md
 ├── src/
 │   ├── assistente.py
 │   ├── dados.py
@@ -36,6 +37,7 @@ python analise/comparacao.py # tabela comparativa e sensibilidade
 ├── analise/
 │   └── comparacao.py
 └── docs
+    ├── justificativas.md
     ├── referencias.md
     └── testes_usuarios.md
 ```
