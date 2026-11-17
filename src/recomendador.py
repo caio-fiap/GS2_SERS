@@ -44,7 +44,7 @@ def comparar(p, potencia_w = None, pessoas = None, min_banho = None, tarifa = No
     for x in (b, c):
         x["economia_mensal"] = a["custo_mensal"] - x["custo_mensal"]
         x["economia_periodo"] = a["custo_total_periodo"] - x["custo_total_periodo"]
-        x["co2_evitado_kg"] = a["co2_kg_periodo"] - x["co2_kg_periodo"]
+        x["co2_evitado"] = a["co2_kg_periodo"] - x["co2_kg_periodo"]
         x["payback_mes"] = payback_mes(x["custo_inicial"], x["economia_mensal"]) if x["custo_inicial"] else 0
     a["economia_mensal"] = a["economia_periodo"] = a["co2_evitado"] = 0.0
     a["payback_mes"] = None
